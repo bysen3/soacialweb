@@ -25,7 +25,7 @@ SECRET_KEY = ')qq(6d=iq@arb!u-w86my$ybs!z1$!0533vt-7sqwvb9m1*!b8'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['172.16.1.99','172.16.25.25','mysite.com']
+ALLOWED_HOSTS = ['172.16.1.99','172.16.25.25','mysite.com','85a9c5b3.ngrok.io','localhost']
 
 
 # Application definition
@@ -39,6 +39,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'social_django',
+    'images.apps.ImagesConfig',
+    'sorl.thumbnail',
+
     
 ]
 
@@ -140,3 +143,5 @@ AUTHENTICATION_BACKENDS = [
 SOCIAL_AUTH_FACEBOOK_KEY = '483958845769527' # Facebook App ID
 SOCIAL_AUTH_FACEBOOK_SECRET = 'e1a46030d0b7998360417e760bd91ba9' # Facebook App Secret
 SOCIAL_AUTH_FACEBOOK_SCOPE = ['email']
+
+THUMBNAIL_DEBUG = True
